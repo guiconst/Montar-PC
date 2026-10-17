@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monte Seu PC — Guia de PC Custo-Benefício</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Principal"><b>Monte Seu PC</b><a href="#inicio">Início</a><a
+                href="#configs">Configurações</a><a href="#jogos">Jogos</a><a href="#lojas">Lojas</a><a
+                href="#guia">Guia</a></nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h1>Seu Próximo Computador Começa Aqui</h1>
+            <p><span class="badge">Orçamento total: R$ 3.000 a R$ 4.000 (com gabinete e monitor)</span></p>
+            <div class="grid" style="margin-top:16px">
+                <div class="card hero"><img src="images/pecas/processador.svg" alt="Processador">
+                    <div>
+                        <h3>PC econômico</h3>
+                        <p>Ryzen 5 5600GT com <b>gráficos integrados</b>. Estudos, jogos leves e upgrade futuro.</p><a
+                            class="btn" href="#cfgA">Ver Configuração A</a>
+                    </div>
+                </div>
+                <div class="card hero"><img src="images/pecas/placa-video.svg" alt="Placa de vídeo">
+                    <div>
+                        <h3>PC gamer com placa de vídeo</h3>
+                        <p>Ryzen 5 5500 + <b>Radeon RX 6600</b>. Mais força para jogos 3D em Full HD.</p><a class="btn"
+                            href="#cfgB">Ver Configuração B</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="configs">
+            <h2>Configurações</h2>
+            <p class="sub">Duas montagens de referência.</p>
+            <div class="note" style="margin-bottom:14px"><b>Atenção:</b> o Ryzen 5 5600GT <b>tem</b> gráficos
+                integrados. O Ryzen 5 5500 <b>não tem</b> e precisa de placa de vídeo dedicada.</div>
+            <div class="grid" id="configGrid"></div>
+        </section>
+
+        <section id="jogos">
+            <h2>Catálogo de jogos</h2>
+            <p class="sub">Avaliações <b>qualitativas e estimadas</b>. Não há números de FPS porque eles variam muito
+                com resolução, configurações, drivers e atualizações do jogo.</p>
+            <div class="tabs" id="filtros" role="group" aria-label="Filtros de jogos"></div>
+            <div class="grid" id="games"></div>
+            <p class="note" style="margin-top:14px">Jogos pesados com gráficos integrados não devem ser esperados em
+                alto desempenho. Confira os requisitos oficiais de cada jogo antes de decidir.</p>
+        </section>
+
+        <section id="lojas">
+            <h2>Lojas e links</h2>
+            <p class="sub">Atalhos para as lojas.</p>
+            <div class="grid" id="stores"></div>
+            <p class="note" style="margin-top:14px">Compare <b>preço à vista, parcelamento, frete, reputação e
+                    garantia</b>. O melhor preço nem sempre é a melhor compra.</p>
+        </section>
+
+        <section id="guia">
+            <h2>Guia para iniciantes</h2>
+            <p class="sub">Explicações curtas e sem complicação.</p>
+            <div id="guide"></div>
+        </section>
+    </main>
+    <script src="js/utils.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
