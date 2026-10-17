@@ -5,13 +5,13 @@ const CONFIGS = [
     objetivo: "Estudar, jogar jogos leves e poder fazer upgrade depois.",
     itens: [
       ["Processador", "AMD Ryzen 5 5600GT (com gráficos integrados)", "processador"],
-      ["Placa-mãe", "A520M compatível, com BIOS adequada", "placa-mae"],
-      ["Memória RAM", "16 GB DDR4 3200 MHz (2×8 GB)", "memoria-ram"],
-      ["SSD", "NVMe 500 GB", "ssd"],
+      ["Placa-mãe", "A520M com BIOS compatível. Ex.: Gigabyte A520M K V2, ASRock A520M-HDV ou MSI A520M-A PRO", "placa-mae"],
+      ["Memória RAM", "16 GB DDR4 3200 MHz (2×8 GB). Ex.: Kingston Fury Beast", "memoria-ram"],
+      ["SSD", "NVMe 500 GB. Ex.: Kingston NV2, WD Blue SN580 ou Crucial P3", "ssd"],
       ["Fonte", "MSI MAG A550BN ou equivalente confiável", "fonte"],
-      ["Gabinete", "Micro-ATX com boa ventilação", "gabinete"],
-      ["Monitor", "Full HD, 100 Hz, 24 polegadas", "monitor"],
-      ["Headset (opcional)", "Modelo de entrada", "headset"]
+      ["Gabinete", "Micro-ATX com boa ventilação (frente em malha). Ex.: linhas da Pichau, Redragon ou Mancer", "gabinete"],
+      ["Monitor", "Full HD, 100 Hz, 24 polegadas. Ex.: Philips 241V8L", "monitor"],
+      ["Headset (opcional)", "Modelo de entrada. Ex.: HyperX Cloud Stinger ou Redragon Zeus", "headset"]
     ],
     pros: ["Mais barato para montar", "Bom para estudar e jogar jogos leves", "Permite melhorar o PC no futuro"],
     contras: ["Dificuldade com jogos mais pesados", "Alguns jogos precisarão de gráficos reduzidos"]
@@ -21,13 +21,13 @@ const CONFIGS = [
     objetivo: "Desempenho superior em jogos variados, inclusive 3D exigentes em Full HD.",
     itens: [
       ["Processador", "AMD Ryzen 5 5500 (sem vídeo integrado)", "processador"],
-      ["Placa-mãe", "A520M compatível, com BIOS adequada", "placa-mae"],
-      ["Placa de vídeo", "AMD Radeon RX 6600 8 GB", "placa-video"],
-      ["Memória RAM", "16 GB DDR4 3200 MHz (2×8 GB)", "memoria-ram"],
-      ["SSD", "NVMe 500 GB", "ssd"],
-      ["Fonte", "MSI MAG A550BN ou equivalente confiável", "fonte"],
-      ["Gabinete", "Micro-ATX ventilado", "gabinete"],
-      ["Monitor", "Full HD, 100 Hz", "monitor"],
+      ["Placa-mãe", "A520M com BIOS compatível. Ex.: Gigabyte A520M K V2, ASRock A520M-HDV ou MSI A520M-A PRO", "placa-mae"],
+      ["Placa de vídeo", "AMD Radeon RX 6600 8 GB. Ex.: ASRock Challenger D, XFX Speedster SWFT 210 ou PowerColor Fighting", "placa-video"],
+      ["Memória RAM", "16 GB DDR4 3200 MHz (2×8 GB). Ex.: Kingston Fury Beast", "memoria-ram"],
+      ["SSD", "NVMe 500 GB. Ex.: Kingston NV2, WD Blue SN580 ou Crucial P3", "ssd"],
+      ["Fonte", "MSI MAG A550BN ou equivalente confiável (confira a potência recomendada da placa de vídeo)", "fonte"],
+      ["Gabinete", "Micro-ATX ventilado, com espaço pra placa de vídeo. Ex.: linhas da Pichau, Redragon ou Mancer", "gabinete"],
+      ["Monitor", "Full HD, 100 Hz. Ex.: Philips 241V8L", "monitor"],
     ],
     pros: ["Roda mais jogos e oferece melhor desempenho", "Mais indicado para jogos pesados", "Boa experiência em Full HD"],
     contras: ["Mais caro para montar", "Pode ultrapassar o orçamento de R$ 4.000"]
