@@ -15,7 +15,7 @@ function renderJogos() {
   document.querySelectorAll("#filtros button").forEach((b) => { b.onclick = () => { filtroAtual = b.dataset.f; renderJogos(); }; });
   const lista = JOGOS.filter((g) => filtroAtual === "todos" || g[2].includes(filtroAtual));
   $("#games").innerHTML = lista.length ? lista.map((g) => `<div class="card">
-    <div class="thumb" data-n="${g[0]}"><img src="images/jogos/${slug(g[0])}.jpg" alt="Capa de ${g[0]}" loading="lazy" onerror="this.remove()"></div>
+    <div class="thumb" data-n="${g[0]}"><img src="images/jogos/${slug(g[0])}.jpg" alt="Capa de ${g[0]}" loading="lazy" onerror="console.warn('Imagem não encontrada:', this.src); this.remove()"></div>
     <h3>${g[0]}</h3><span class="badge">${g[1]}</span>
     <p style="margin:10px 0 0"><small class="muted">PC A (integrado)</small><br><span class="r r${g[3]}">${NIVEIS[g[3]]}</span><br>
     <small class="muted">PC B (RX 6600)</small><br><span class="r r${g[4]}">${NIVEIS[g[4]]}</span></p>
@@ -24,7 +24,7 @@ function renderJogos() {
 
 function renderLojas() {
   $("#stores").innerHTML = LOJAS.map((l) => `<div class="card store">
-    <div class="thumb logo" data-n="${l[0]}" style="background:${l[2]}"><img src="images/lojas/${slug(l[0])}.png" alt="Logo ${l[0]}" loading="lazy" onerror="this.remove()"></div>
+    <div class="thumb logo" data-n="${l[0]}" style="background:${l[2]}"><img src="images/lojas/${slug(l[0])}.png" alt="Logo ${l[0]}" loading="lazy" onerror="console.warn('Imagem não encontrada:', this.src); this.remove()"></div>
     <a class="btn" href="${l[1]}" target="_blank" rel="noopener noreferrer">Abrir ${l[0]}</a></div>`).join("");
 }
 
